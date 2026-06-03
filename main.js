@@ -54,7 +54,7 @@ document.getElementById('risultato').innerHTML =`
     <p>Km percorsi: ${km}</p>
     <p>Età passeggero: ${eta}</p>
     <p>Sconto applicato: ${sconto}</p>
-    <p>Prezzo base: ${prezzoBase.toFixed(2)}€</p>
-    <p>Totale : ${totale.toFixed(2)}€</p>
+    <p>Prezzo base senza sconto applicato: ${prezzoBase.toFixed(2)}€</p>
+    <p>Totale: ${totale.toFixed(2)}€</p>
   `;
 }
