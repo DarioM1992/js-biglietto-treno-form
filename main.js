@@ -38,11 +38,13 @@ if (eta < 18 ) {
 } else {
     sconto = "Nessuno sconto";
 }
-console.log("Calcola Biglietto");
-console.log("Km percorsi:" + km);
-console.log("Età passegero:" + eta);
-console.log(sconto);
-console.log("Prezzo base senza sconto applicato (0.21€):" + prezzoBase.toFixed(2) + "€");
-console.log("Totale:" + totale.toFixed(2) + "€")
+
+// //blocco di console log
+// console.log("Calcola Biglietto");
+// console.log("Km percorsi:" + km);
+// console.log("Età passegero:" + eta);
+// console.log(sconto);
+// console.log("Prezzo base senza sconto applicato (0.21€):" + prezzoBase.toFixed(2) + "€");
+// console.log("Totale:" + totale.toFixed(2) + "€")
 
 }
