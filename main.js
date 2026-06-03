@@ -28,7 +28,9 @@ const prezzoBase = prezzoAlKm * km;
 let totale = prezzoBase;
 let sconto = "";
 
-//applico lo sconto
+//applico lo sconto 
+//minorenni 20%
+//over 65 o compresi 40%
 if (eta < 18 ) {
     totale = prezzoBase * 0.80;
     sconto = "Sconto minorenni del 20%";
