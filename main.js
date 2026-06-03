@@ -6,20 +6,36 @@ function costoBiglietto (){
 const km = parseFloat(document.getElementById('km').value) ;
 const eta = parseInt (document.getElementById('eta').value);
 
-//costo al km 
-const prezzoAlKm = 0.21 ;
+
 
 //controllo degli input
-if (isNaN (km)) || isNaN (eta) || km < 0 || eta < 0 ) {
+if (isNaN (km)) || isNaN (eta) || km < 0 || eta < 0) {
     alert("Errore:valori sbagliati");
     return;
 }
 
-//blocco degli sconti
-let sconto = 0;
+//costo al km 
+const prezzoAlKm = 0.21 ;
+
+
+//blocco degli sconti e totale
+let totale = prezzoAlKm;
+let sconto = "";
 
 //applico lo sconto
 if (eta < 18 ) {
-    sconto = 0.20;
-    
+    totale = prezzoAlKm * 0.80;
+    sconto = "Sconto minorenni del 20%";
+} else if (eta >= 65) {
+    totale = prezzoAlKm *0.60;
+    sconto = "Sconto over65 del 40%";
+} else {
+    sconto = "Nessuno sconto";
+}
+console.log("Calcola Biglietto");
+console.log("Km percorsi:" + km);
+console.log("Età passegero:" + eta);
+console.log(sconto);
+console.log("Prezzo al km (0.21€):" + prezzoAlKm.toFixed(2) + "€");
+
 }
