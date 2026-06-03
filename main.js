@@ -2,6 +2,10 @@
 //apro la funzione per calcolo
 function costoBiglietto (){
 
+//blocca il reload della pagina
+event.preventDefault();
+
+
 //valori inseriti quali km ed eta
 const km = parseFloat(document.getElementById('km').value) ;
 const eta = parseInt (document.getElementById('eta').value);
