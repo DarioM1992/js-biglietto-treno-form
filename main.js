@@ -13,7 +13,7 @@ const eta = parseInt (document.getElementById('eta').value);
 
 
 //controllo degli input
-if (isNaN (km) || isNaN (eta) || km < 0 || eta < 0) {
+if (isNaN (km) || isNaN (eta) || km <= 0 || eta <= 0) {
     alert("Errore:valori sbagliati");
     return;
 }
@@ -42,7 +42,7 @@ console.log("Calcola Biglietto");
 console.log("Km percorsi:" + km);
 console.log("Età passegero:" + eta);
 console.log(sconto);
-console.log("Prezzo al km (0.21€):" + prezzoBase.toFixed(2) + "€");
+console.log("Prezzo base senza sconto applicato (0.21€):" + prezzoBase.toFixed(2) + "€");
 console.log("Totale:" + totale.toFixed(2) + "€")
 
 }
