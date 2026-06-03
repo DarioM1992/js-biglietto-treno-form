@@ -9,7 +9,7 @@ const eta = parseInt (document.getElementById('eta').value);
 
 
 //controllo degli input
-if (isNaN (km)) || isNaN (eta) || km < 0 || eta < 0) {
+if (isNaN (km) || isNaN (eta) || km < 0 || eta < 0) {
     alert("Errore:valori sbagliati");
     return;
 }
@@ -19,7 +19,7 @@ const prezzoAlKm = 0.21 ;
 
 
 //blocco degli sconti e totale
-let totale = prezzoAlKm;
+let totale = prezzoAlKm * km;
 let sconto = "";
 
 //applico lo sconto
