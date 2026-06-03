@@ -53,6 +53,7 @@ if (eta < 18 ) {
 
 //blocco innerHTML al posto dei console.log
 document.getElementById('risultato').innerHTML =`
+    <h2>Risultato dei valori inseriti e ricevuti</h2>
     <p>Km percorsi: ${km}</p>
     <p>Età passeggero: ${eta}</p>
     <p>Sconto applicato: ${sconto}</p>
