@@ -1,12 +1,24 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="it">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="main.js" defer></script>
+    <link rel="stylesheet" href="style.css">
     <title>js-biglietto-treno-form</title>
 </head>
 <body>
-    
+    <h1>CALCOLIAMO PREZZO BIGLIETTO</h1>
+    <form action="ticket">
+        <label for="km">Chilometri da percorrere:</label>
+        <input type="number" id="km" name="km" min="0">
+
+        <label for="eta">Età del passeggero:</label>
+        <input type="number" id="eta" name="eta" min="0" max="150">
+
+        <button>
+            Calcola Prezzo
+        </button>
+    </form>
 </body>
 </html>
