@@ -1,6 +1,6 @@
 
 //apro la funzione per calcolo
-function costoBiglietto (){
+function costoBiglietto (event){
 
 //blocca il reload della pagina
 event.preventDefault();
