@@ -1,22 +1,29 @@
+//valori inseriti quali km ed eta
+const form = document.querySelector('form');
+
+
+
+//submit event del button
+form.addEventListener('submit', function(event){
+    event.preventDefault();
+    costoBiglietto();
+});
+
+
 
 //apro la funzione per calcolo
 function costoBiglietto (event){
 
-//blocca il reload della pagina
-event.preventDefault();
-
-
-//valori inseriti quali km ed eta
-const km = parseFloat(document.getElementById('km').value) ;
-const eta = parseInt (document.getElementById('eta').value);
-
-
+const km  = parseFloat(document.getElementById('km').value);
+const eta = parseInt(document.getElementById('eta').value);
 
 //controllo degli input
 if (isNaN (km) || isNaN (eta) || km <= 0 || eta <= 0) {
     alert("Errore:valori sbagliati");
     return;
 }
+
+
 
 //costo al km 
 const prezzoAlKm = 0.21 ;
